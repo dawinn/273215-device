@@ -1,4 +1,5 @@
 node_modules/
+layout/
 .DS_Store
 Thumbs.db
 .idea
