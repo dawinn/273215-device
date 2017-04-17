@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="logo-header" href="index.html">DEVICE</a>
+      <input class="search" id="search-input" type="search">
+      <label for="search-input"></label>
+      <nav class="add-menu">
+        <a class="profile link" href="">Валентин Петухов</a>
+        <a class="logout link" href="">Выйти</a>
+        <a class="compare link" href="">Сравнить</a>
+        <a class="cart link" href="">Корзина</a>
+      </nav>
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a href="">Каталог товаров</a>
+          </li>
+          <li>
+            <a href="">Доставка</a>
+          </li>
+          <li>
+            <a href="">Гарантия</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Моноподы для селфи</h1>
+      <nav class="breadscrumb">
+        <ul>
+          <li>
+            <a href="">Главная</a>
+            <a href="">Каталог товаров</a>
+            <a >Моноподы для селфи</a>
+          </li>
+        </ul>
+      </nav>
+      <aside class="widget-left">
+        <h2>Фильтр:</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="fieldset-block">
+            <legend class="fieldset-caption">
+              Стоимость:
+            </legend>
+            <label for="min-cost">от</label>
+            <input type="text" name="min-cost" id="min-cost" value="0">
+            <label for="max-cost">до</label>
+            <input type="text" name="max-cost" id="max-cost" value="5000">
+          </fieldset>
+          <fieldset class="fieldset-block">
+            <legend class="fieldset-caption">
+              Цвет:
+            </legend>
+            <input type="checkbox" name="color-1" id="color-1" checked="checked">
+            <label for="color-1">Черный</label>
+            <input type="checkbox" name="color-2" id="color-2" >
+            <label for="color-2">Белый</label>
+            <input type="checkbox" name="color-3" id="color-3" checked="checked">
+            <label for="color-3">Синий</label>
+            <input type="checkbox" name="color-4" id="color-4" checked="checked">
+            <label for="color-4">Красный</label>
+            <input type="checkbox" name="color-1" id="color-5" >
+            <label for="color-5">Розовый</label>
+          </fieldset>
+          <fieldset class="fieldset-block">
+            <legend class="fieldset-caption">
+              Bluetooth:
+            </legend>
+            <input type="radio" name="bt-availability" id="bt-y" checked="checked">
+            <label for="bt-y">Есть</label>
+            <input type="radio" name="bt-availability" id="bt-n" >
+            <label for="bt-n">Нет</label>
+          </fieldset>
+          <button type="submit" class="btn">Показать</button>
+        </form>
+      </aside>
+      <div class="content">
+        <div class="sort">
+          <h2>Сортировка:</h2>
+          <a class="current" href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По популярности</a>
+          <a class="sort-up сurrent" href="#">По возрастанию</a>
+          <a class="sort-down" href="#">По убыванию</a>
+        </div>
+        <div class="goods-list">
+          <section class="goods-item">
+            <div class="image">
+              <img src="http://placehold.it/360x382" width="360" height="382" alt="Любительская селфи-палка">
+            </div>
+            <h3>Любительская селфи-палка</h3>
+            <div class="price">500 руб.</div>
+            <div class="on-hover">
+              <a class="in-cart" href="#">В корзину</a>
+              <a class="in-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </section>
+          <section class="goods-item">
+            <div class="image">
+              <img src="http://placehold.it/360x382" width="360" height="382" alt="Профессиональная селфи-палка">
+            </div>
+            <h3>Профессиональная селфи-палка</h3>
+            <div class="price">1 500 руб.</div>
+            <div class="on-hover">
+              <a class="in-cart" href="#">В корзину</a>
+              <a class="in-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </section>
+          <section class="goods-item">
+            <div class="image">
+              <img src="http://placehold.it/360x382" width="360" height="382" alt="Непотопляемая селфи-палка">
+            </div>
+            <h3>Непотопляемая селфи-палка</h3>
+            <div class="price">2 500 руб.</div>
+            <div class="on-hover">
+              <a class="in-cart" href="#">В корзину</a>
+              <a class="in-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </section>
+          <section class="goods-item">
+            <div class="flag flag-new">новинка</div>
+            <div class="image">
+              <img src="http://placehold.it/360x382" width="360" height="382" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+            </div>
+            <h3>Селфи-палка &laquo;Следуй за мной&raquo;</h3>
+            <div class="price">4 900 руб.</div>
+            <div class="on-hover">
+              <a class="in-cart" href="#">В корзину</a>
+              <a class="in-compare" href="#">Добавить к сравнению</a>
+            </div>
+          </section>
+        </div>
+        <nav class="pagination">
+          <a class="prev" href="#">Назад</a>
+          <a class="current" >1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a class="next" href="#">Вперед</a>
+        </nav>
+      </div>
+    </main>
+  </body>
+  <footer class="main-footer">
+    <a class="logo-footer" href="">Device</a>
+    <nav class="add-menu">
+      <a class="login link" href="">Войти</a>
+      <a class="compare link" href="">Сравнить</a>
+      <a class="cart link" href="">Корзина</a>
+    </nav>
+    <div class="contact-address">
+          г. Москва, ул. Строителей, 15
+    </div>
+    <div class="contact-tel">
+      <a href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+    </div>
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="">Доставка</a>
+        </li>
+        <li>
+          <a href="">Гарантия</a>
+        </li>
+        <li>
+          <a href="">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="social-block">
+      <h2>Социальные кнопки:</h2>
+      <a class="fb social-btn" href="">Facebook</a>
+      <a class="in social-btn" href="">Instagram</a>
+      <a class="tw social-btn" href="">Twitter</a>
+    </section>
+    <a class="designed" href="https://htmlacademy.ru">htmlacademy.ru</a>
+  </footer>
+</html>

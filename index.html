@@ -3,10 +3,165 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header container">
+      <a class="logo-header">DEVICE</a>
+      <form class="search" action="https://echo.htmlacademy.ru" method="post">
+        <input  id="search-input" type="search" placeholder="Поиск по сайту">
+        <label for="search-input">Поиск по сайту</label>
+        <button type="submit">Найти</button>
+      </form>
+      <nav class="add-menu">
+        <a class="login link" href="">Войти</a>
+        <a class="compare link" href="">Сравнить</a>
+        <a class="cart link" href="">Корзина</a>
+      </nav>
+      <nav class="main-menu">
+        <div class="btn catalog-btn">
+          <a href="catalog.html">Каталог товаров</a>
+        </div>
+        <ul>
+          <li>
+            <a href="">Доставка</a>
+          </li>
+          <li>
+            <a href="">Гарантия</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="slider">
+        <!-- TODO: тут будет слайдер -->
+      </div>
+      <section class="popular-block">
+        <h2>Популярное</h2>
+        <ul class="popular-list">
+          <li>
+            <a href=""><img src="http://placehold.it/160x160" width="160" height="160" alt="Виртуальная реальность" ><span>Виртуальная реальность</span></a>
+          </li>
+          <li>
+            <a href=""><img src="http://placehold.it/160x160" width="160" height="160" alt="Моноподы для селфи" ><span>Моноподы для селфи</span></a>
+          </li>
+          <li>
+            <a href=""><img src="http://placehold.it/160x160" width="160" height="160" alt="Экшн-камеры" ><span>Экшн&ndash;камеры</span></a>
+          </li>
+          <li>
+            <a href=""><img src="http://placehold.it/160x160" width="160" height="160" alt="Фитнесс браслеты" ><span>Фитнесс браслеты</span></a>
+          </li>
+          <li>
+            <a href=""><img src="http://placehold.it/160x160" width="160" height="160" alt="Умные часы" ><span>Умные часы</span></a>
+          </li>
+          <li>
+            <a href=""><img src="http://placehold.it/160x160" width="160" height="160" alt="Квадракоптеры" ><span>Квадракоптеры</span></a>
+          </li>
+        </ul>
+      </section>
+      <section class="services-slider">
+        <h2>Сервисы</h2>
+        <input type="radio" name="services-tab" id="tab-1" checked="checked">
+        <input type="radio" name="services-tab" id="tab-2" >
+        <input type="radio" name="services-tab" id="tab-3" >
+        <div class="services-tabs">
+          <label for="tab-1">Доставка</label>
+          <label for="tab-2">Гарантия</label>
+          <label for="tab-3">Кредит</label>
+        </div>
+        <div class="services-slides">
+          <div class="slide">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="logo-block">
+        <h2>Производители</h2>
+        <div class="logo-list">
+          <div>
+            <a href=""><img src="http://placehold.it/340x130" width="340" height="130" alt=""></a>
+          </div>
+          <div>
+            <a href=""><img src="http://placehold.it/340x130" width="340" height="130" alt=""></a>
+          </div>
+          <div>
+            <a href=""><img src="http://placehold.it/340x130" width="340" height="130" alt=""></a>
+          </div>
+          <div>
+            <a href=""><img src="http://placehold.it/340x130" width="340" height="130" alt=""></a>
+          </div>
+        </div>
+      </section>
+      <div class="two-cols">
+        <section class="about-block">
+          <h2>О нас</h2>
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul class="style-redline">
+            <li>
+              Деловые линии
+            </li>
+            <li>
+              Автотрейдинг
+            </li>
+            <li>
+              ЖелДорЭкспедиция
+            </li>
+          </ul>
+          <a class="link" href="">Подробнее о компании</a>
+        </section>
+        <section class="contacts-block">
+          <h2>Контакты</h2>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность вашей покупки. Всякое бывает.
+          </p>
+          <a href="/map" class="image-map"><img src="http://placehold.it/562x224" width="562" height="224" alt="карта"></a>
+          <a class="link" href="/feedback">Напишите нам</a>
+        </section>
+      </div>
+    </main>
   </body>
+  <footer class="main-footer">
+    <a class="logo-footer" href="">Device</a>
+    <nav class="add-menu">
+      <a class="login link" href="">Войти</a>
+      <a class="compare link" href="">Сравнить</a>
+      <a class="cart link" href="">Корзина</a>
+    </nav>
+    <div class="contact-address">
+          г. Москва, ул. Строителей, 15
+    </div>
+    <div class="contact-tel">
+      <a href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+    </div>
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="">Доставка</a>
+        </li>
+        <li>
+          <a href="">Гарантия</a>
+        </li>
+        <li>
+          <a href="">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="social-block">
+      <h2>Социальные кнопки:</h2>
+      <a class="fb social-btn" href="">Facebook</a>
+      <a class="in social-btn" href="">Instagram</a>
+      <a class="tw social-btn" href="">Twitter</a>
+    </section>
+    <a class="designed" href="https://htmlacademy.ru">htmlacademy.ru</a>
+  </footer>
 </html>
