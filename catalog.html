@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -33,7 +34,7 @@
       </nav>
     </header>
     <main>
-      <h1>Моноподы для селфи</h1>
+      <h1 class="page-caption">Моноподы для селфи</h1>
       <nav class="breadscrumb">
         <ul>
           <li>
@@ -44,7 +45,7 @@
         </ul>
       </nav>
       <aside class="widget-left">
-        <h2>Фильтр:</h2>
+        <h3>Фильтр:</h3>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="fieldset-block">
             <legend class="fieldset-caption">
@@ -84,7 +85,7 @@
       </aside>
       <div class="content">
         <div class="sort">
-          <h2>Сортировка:</h2>
+          <h3>Сортировка:</h3>
           <a class="current" href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По популярности</a>
@@ -149,37 +150,43 @@
     </main>
   </body>
   <footer class="main-footer">
-    <a class="logo-footer" href="">Device</a>
-    <nav class="add-menu">
-      <a class="login link" href="">Войти</a>
-      <a class="compare link" href="">Сравнить</a>
-      <a class="cart link" href="">Корзина</a>
-    </nav>
-    <div class="contact-address">
-          г. Москва, ул. Строителей, 15
+    <div class="row-top">
+      <a class="logo-footer" href="">Device</a>
+      <nav class="add-menu">
+        <a class="login link" href="">Войти</a>
+        <a class="compare link" href="">Сравнить</a>
+        <a class="cart link" href="">Корзина</a>
+      </nav>
     </div>
-    <div class="contact-tel">
-      <a href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+    <div class="row-middle">
+      <div class="contact-address">
+        г. Москва, ул. Строителей, 15
+      </div>
+      <div class="contact-tel">
+        <a href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a href="">Доставка</a>
+          </li>
+          <li>
+            <a href="">Гарантия</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-menu">
-      <ul>
-        <li>
-          <a href="">Доставка</a>
-        </li>
-        <li>
-          <a href="">Гарантия</a>
-        </li>
-        <li>
-          <a href="">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="social-block">
-      <h2>Социальные кнопки:</h2>
-      <a class="fb social-btn" href="">Facebook</a>
-      <a class="in social-btn" href="">Instagram</a>
-      <a class="tw social-btn" href="">Twitter</a>
-    </section>
-    <a class="designed" href="https://htmlacademy.ru">htmlacademy.ru</a>
+    <div class="row-bottom">
+      <section class="social-block">
+        <h2 class="section-title hidden">Социальные кнопки:</h2>
+        <a class="fb social-btn" href="">Facebook</a>
+        <a class="in social-btn" href="">Instagram</a>
+        <a class="tw social-btn" href="">Twitter</a>
+      </section>
+      <a class="designed" href="https://htmlacademy.ru">htmlacademy.ru</a>
+    </div>
   </footer>
 </html>

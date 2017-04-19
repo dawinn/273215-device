@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
@@ -40,7 +40,7 @@
         <!-- TODO: тут будет слайдер -->
       </div>
       <section class="popular-block">
-        <h2>Популярное</h2>
+        <h2 class="section-title">Популярное</h2>
         <ul class="popular-list">
           <li>
             <a href=""><img src="http://placehold.it/160x160" width="160" height="160" alt="Виртуальная реальность" ><span>Виртуальная реальность</span></a>
@@ -63,7 +63,7 @@
         </ul>
       </section>
       <section class="services-slider">
-        <h2>Сервисы</h2>
+        <h2 class="section-title">Сервисы</h2>
         <input type="radio" name="services-tab" id="tab-1" checked="checked">
         <input type="radio" name="services-tab" id="tab-2" >
         <input type="radio" name="services-tab" id="tab-3" >
@@ -74,14 +74,14 @@
         </div>
         <div class="services-slides">
           <div class="slide">
-            <h2>Доставка</h2>
+            <h2 class="section-title">Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш на этаж!
             </p>
           </div>
         </div>
       </section>
       <section class="logo-block">
-        <h2>Производители</h2>
+        <h2 class="section-title hidden">Производители</h2>
         <div class="logo-list">
           <div>
             <a href=""><img src="http://placehold.it/340x130" width="340" height="130" alt=""></a>
@@ -99,7 +99,7 @@
       </section>
       <div class="two-cols">
         <section class="about-block">
-          <h2>О нас</h2>
+          <h2 class="section-title">О нас</h2>
           <p>
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
@@ -120,7 +120,7 @@
           <a class="link" href="">Подробнее о компании</a>
         </section>
         <section class="contacts-block">
-          <h2>Контакты</h2>
+          <h2 class="section-title">Контакты</h2>
           <p>
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность вашей покупки. Всякое бывает.
           </p>
@@ -131,37 +131,43 @@
     </main>
   </body>
   <footer class="main-footer">
-    <a class="logo-footer" href="">Device</a>
-    <nav class="add-menu">
-      <a class="login link" href="">Войти</a>
-      <a class="compare link" href="">Сравнить</a>
-      <a class="cart link" href="">Корзина</a>
-    </nav>
-    <div class="contact-address">
-          г. Москва, ул. Строителей, 15
+    <div class="row-top">
+      <a class="logo-footer" href="">Device</a>
+      <nav class="add-menu">
+        <a class="login link" href="">Войти</a>
+        <a class="compare link" href="">Сравнить</a>
+        <a class="cart link" href="">Корзина</a>
+      </nav>
     </div>
-    <div class="contact-tel">
-      <a href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+    <div class="row-middle">
+      <div class="contact-address">
+        г. Москва, ул. Строителей, 15
+      </div>
+      <div class="contact-tel">
+        <a href="tel:+7(495)495-95-95">Тел: +7(495)495-95-95</a>
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <a href="">Доставка</a>
+          </li>
+          <li>
+            <a href="">Гарантия</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-menu">
-      <ul>
-        <li>
-          <a href="">Доставка</a>
-        </li>
-        <li>
-          <a href="">Гарантия</a>
-        </li>
-        <li>
-          <a href="">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="social-block">
-      <h2>Социальные кнопки:</h2>
-      <a class="fb social-btn" href="">Facebook</a>
-      <a class="in social-btn" href="">Instagram</a>
-      <a class="tw social-btn" href="">Twitter</a>
-    </section>
-    <a class="designed" href="https://htmlacademy.ru">htmlacademy.ru</a>
+    <div class="row-bottom">
+      <section class="social-block">
+        <h2 class="section-title hidden">Социальные кнопки:</h2>
+        <a class="fb social-btn" href="">Facebook</a>
+        <a class="in social-btn" href="">Instagram</a>
+        <a class="tw social-btn" href="">Twitter</a>
+      </section>
+      <a class="designed" href="https://htmlacademy.ru">htmlacademy.ru</a>
+    </div>
   </footer>
 </html>
