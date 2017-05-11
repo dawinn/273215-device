@@ -44,14 +44,6 @@ body {
   clear: both;
 }
 
-.hidden-view {
-  position: absolute;
-  left: -9000px;
-  width: 0;
-  height: 0;
-  font-size: 0;
-}
-
 .page-caption {
   font-size: 48px;
   line-height: 1.2;
@@ -101,6 +93,14 @@ body {
 .btn:active {
   color: rgba(0,0,0,0.3);
   background-color: #f0c52e;
+}
+
+.hidden-view {
+  position: absolute;
+  left: -9000px;
+  width: 0;
+  height: 0;
+  font-size: 0;
 }
 
 .header {
