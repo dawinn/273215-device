@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ico-cart-b {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -5px;
+}
+
+.sprite-ico-cart-y {
+    width: 12px;
+    height: 12px;
+    background-position: -27px -5px;
+}
+
+.sprite-ico-compare-b {
+    width: 10px;
+    height: 10px;
+    background-position: -49px -5px;
+}
+
+.sprite-ico-compare-y {
+    width: 10px;
+    height: 10px;
+    background-position: -69px -5px;
+}
+
+.sprite-ico-facebook {
+    width: 39px;
+    height: 38px;
+    background-position: -49px -25px;
+}
+
+.sprite-ico-insta {
+    width: 39px;
+    height: 38px;
+    background-position: -98px -5px;
+}
+
+.sprite-ico-plus {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -53px;
+}
+
+.sprite-ico-search {
+    width: 16px;
+    height: 16px;
+    background-position: -98px -53px;
+}
+
+.sprite-ico-twitter {
+    width: 38px;
+    height: 38px;
+    background-position: -5px -79px;
+}
+
+.sprite-ico-user-b {
+    width: 13px;
+    height: 12px;
+    background-position: -124px -53px;
+}
+
+.sprite-ico-user-y {
+    width: 13px;
+    height: 12px;
+    background-position: -53px -75px;
+}
+
+.sprite-logo-htmlacademy {
+    width: 27px;
+    height: 34px;
+    background-position: -124px -75px;
+}
